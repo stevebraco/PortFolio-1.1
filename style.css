@@ -51,6 +51,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -95,6 +96,44 @@ p {
   font-weight: 300;
 }
 
+input, textarea {
+  border: none;
+  border: 1px #dfe0e2 solid;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
+  padding: 1rem 0 .8rem 1rem;
+  font-family: 'Inter', sans-serif;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+li a:hover {
+  color: #000000;
+}
+
+small {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
 .dp-flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,6 +162,7 @@ p {
 
 .section {
   padding: 10rem 5rem;
+  border-radius: 15px;
 }
 
 .btn {
@@ -162,6 +202,16 @@ p {
 
 .wrapper-heading {
   max-width: 30rem;
+}
+
+.wrapper-heading-contact {
+  max-width: 40rem;
+}
+
+.wrapper-input {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header {
@@ -244,15 +294,15 @@ p {
   position: relative;
   background: url("./img/iphone2-vierge.png") #e2e4f8 no-repeat;
   width: 100%;
-  border-radius: 15px;
   padding: 5rem;
+  background-position: -6% -6%;
 }
 
 .profil__title {
   display: block;
 }
 
-.profil__content {
+.profil__wrapper {
   max-width: 65rem;
 }
 
@@ -268,37 +318,13 @@ p {
   padding-bottom: 1rem;
 }
 
-.profil__info {
-  width: 71.5%;
-  height: 442px;
-  background: #5d5d5e;
-  opacity: .6;
-  z-index: 1;
-  position: absolute;
-  top: 122px;
-  right: 25px;
-  border-radius: 3px;
-  overflow: scroll;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.profil__info:hover {
-  background: #F1F1F4;
-  opacity: 1;
-}
-
 .services__content {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-bottom: 5rem;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.services__title {
-  line-height: 4.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .services__title::after {
@@ -372,16 +398,16 @@ p {
 
 .project {
   background: #f8f8fd;
-  border-radius: 15px;
   padding-left: 7rem;
+  margin-bottom: 2rem;
 }
 
 .project__wrapper {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5rem;
 }
 
@@ -435,5 +461,78 @@ p {
 .col-right {
   -webkit-transform: translateY(150px);
           transform: translateY(150px);
+}
+
+.contact {
+  background: url("./img/Monochrome.png") no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  background-color: #f2f2f3;
+  margin-bottom: 2rem;
+}
+
+.contact__title::after {
+  position: absolute;
+  content: 'Me Contacter';
+  line-height: 8rem;
+  opacity: 0.08;
+  font-size: 7rem;
+  top: -40px;
+  left: -40px;
+}
+
+.contact__wrapper {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+}
+
+.contact__text {
+  max-width: 50rem;
+}
+
+.contact__group-input {
+  width: 48%;
+}
+
+.contact__error {
+  color: #e74c3c;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  visibility: hidden;
+}
+
+.contact__group.error .contact__error {
+  visibility: visible;
+}
+
+.contact__submit-img {
+  vertical-align: sub;
+}
+
+.footer {
+  position: relative;
+  background: url("./img/iphone2-vierge.png") #e2e4f8 no-repeat;
+  background-position: 117% 35%;
+}
+
+.footer__heading {
+  padding-bottom: 1rem;
+}
+
+.footer__container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-transform: translateY(-65px);
+          transform: translateY(-65px);
+}
+
+.footer__wrapper {
+  margin-left: 5rem;
 }
 /*# sourceMappingURL=style.css.map */
