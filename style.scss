@@ -44,7 +44,8 @@ html {
 
     p {
         font-size: 2rem;
-        font-weight: 300;
+        font-weight: 400;
+        line-height: 3rem;
     }
 
     input, textarea {
@@ -142,6 +143,8 @@ html {
 
   .wrapper-heading {
       max-width: 30rem;
+      padding-left: 5rem;
+      padding-bottom: 5rem;
 
       &-contact {
           max-width: 40rem ;
@@ -271,8 +274,7 @@ html {
 .services {
 
     &__content {
-        justify-content: space-around;
-        margin-bottom: 5rem;
+        justify-content: space-between;
         align-items: center;
 
     }
@@ -348,9 +350,8 @@ html {
     margin-bottom: 2rem;
 
     &__wrapper {
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        margin-bottom: 5rem;
 
     }
 
@@ -374,7 +375,7 @@ html {
     
 
     &__card {
-        max-width: 45rem;
+        max-width: 47rem;
         padding-bottom: 5rem;
     }
     
@@ -389,6 +390,12 @@ html {
     }
     &__heading {
         padding-bottom: 1rem;
+        color: black;
+        transition: .3s;
+
+        &:hover {
+            opacity: .5;
+        }
     }
 
     &__langage {
@@ -399,8 +406,23 @@ html {
     &__content {
         font-weight: 400;
         font-size: 1.5rem;
+        line-height: 2.5rem;
         color: #555555;
 
+    }
+
+    // autre Projets
+   
+    &-bis__title {
+        &::after {
+            position: absolute;
+            content: 'Autres Projets';
+            line-height: 8rem;
+            opacity: 0.08;
+            font-size: 7rem;
+            top: -40px;
+            left: -40px;
+        }
     }
 }
  .col-right {
@@ -478,6 +500,37 @@ html {
     }
 
  }
+
+ 
+
+ //CAROUSEL
+ .owl-carousel {
+     position: relative;
+ }
+ 
+
+ .owl-prev span, .owl-next span {
+     font-size: 10rem;
+     transition: .5s;
+     color: black;
+
+     &:hover {
+    background: rgb(239, 234, 252);
+    color: whitesmoke;
+     }
+ }
+
+ .owl-prev span {
+     position: absolute;
+     top: 17px;
+     left: -77px;
+ }
+
+ .owl-next span {
+    position: absolute;
+    top: 17px;
+    left: 1043px;
+}
  
 
 

@@ -93,7 +93,8 @@ a {
 
 p {
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 3rem;
 }
 
 input, textarea {
@@ -202,6 +203,8 @@ small {
 
 .wrapper-heading {
   max-width: 30rem;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
 }
 
 .wrapper-heading-contact {
@@ -319,9 +322,9 @@ small {
 }
 
 .services__content {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -403,12 +406,12 @@ small {
 }
 
 .project__wrapper {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5rem;
 }
 
 .project__title::after {
@@ -426,7 +429,7 @@ small {
 }
 
 .project__card {
-  max-width: 45rem;
+  max-width: 47rem;
   padding-bottom: 5rem;
 }
 
@@ -445,6 +448,13 @@ small {
 
 .project__heading {
   padding-bottom: 1rem;
+  color: black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.project__heading:hover {
+  opacity: .5;
 }
 
 .project__langage {
@@ -455,7 +465,18 @@ small {
 .project__content {
   font-weight: 400;
   font-size: 1.5rem;
+  line-height: 2.5rem;
   color: #555555;
+}
+
+.project-bis__title::after {
+  position: absolute;
+  content: 'Autres Projets';
+  line-height: 8rem;
+  opacity: 0.08;
+  font-size: 7rem;
+  top: -40px;
+  left: -40px;
 }
 
 .col-right {
@@ -534,5 +555,33 @@ small {
 
 .footer__wrapper {
   margin-left: 5rem;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.owl-prev span, .owl-next span {
+  font-size: 10rem;
+  -webkit-transition: .5s;
+  transition: .5s;
+  color: black;
+}
+
+.owl-prev span:hover, .owl-next span:hover {
+  background: #efeafc;
+  color: whitesmoke;
+}
+
+.owl-prev span {
+  position: absolute;
+  top: 17px;
+  left: -77px;
+}
+
+.owl-next span {
+  position: absolute;
+  top: 17px;
+  left: 1043px;
 }
 /*# sourceMappingURL=style.css.map */
