@@ -71,7 +71,7 @@ html {
 
     li {
         padding-bottom: 1rem;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         transition: .3s;
 
         & a:hover {
@@ -94,12 +94,12 @@ html {
         justify-content: space-evenly;
     }
   
-  .column {
-    flex-direction: column;
-}
+//   .column {
+//     flex-direction: column;
+// }
 
   .container {
-      max-width: 1100px;
+      max-width: calc(100% - 10rem);
       margin: 0 auto;
   }
   
@@ -126,8 +126,6 @@ html {
     background: #212121;
   }
   
-  
-  
   .translate {
       transition: .3s;
   }
@@ -135,6 +133,15 @@ html {
       transform: translateX(10px);
   }
 
+  //span langage
+  .span-langage {
+      display: inline-block;
+    color: #6E6D7A;
+    background: #d8d8d8;
+    padding: 0.3rem 0.3rem;
+    margin-top: .5rem;
+    border-radius: .2rem;
+  }
   //wrapper
   .wrapper-btn {
       display: flex;
@@ -142,7 +149,7 @@ html {
   }
 
   .wrapper-heading {
-      max-width: 30rem;
+      max-width: 35rem;
       padding-left: 5rem;
       padding-bottom: 5rem;
 
@@ -241,12 +248,10 @@ html {
     width: 100%;
     padding: 5rem;
     background-position: -6% -6%;
-    // overflow: hidden;
-    // height: 100vh;
+    background-size: auto;
 
-    &__container {
-        // justify-content: space-around;
-    }
+
+   
 
     &__title {
         display: block;
@@ -346,7 +351,6 @@ html {
 
 .project {
     background: #f8f8fd;
-    padding-left: 7rem;
     margin-bottom: 2rem;
 
     &__wrapper {
@@ -375,21 +379,22 @@ html {
     
 
     &__card {
-        max-width: 47rem;
+        // max-width: 47rem;
         padding-bottom: 5rem;
     }
     
     &__container-card {
         flex-direction: column;
+        width: 48%;
     }
     
     &__img {
         padding-bottom: 1rem;
-        height: 400px;
+        // height: 400px;
         border-radius: 10px;
+        object-fit: contain;
     }
     &__heading {
-        padding-bottom: 1rem;
         color: black;
         transition: .3s;
 
@@ -398,10 +403,7 @@ html {
         }
     }
 
-    &__langage {
-        padding-bottom: 1rem;
-        color: #6E6D7A;
-    }
+    
 
     &__content {
         font-weight: 400;
@@ -486,6 +488,15 @@ html {
     background:  url('./img/iphone2-vierge.png') #e2e4f8 no-repeat;
     background-position: 117% 35%;
 
+    &__avatar {
+        max-width: 9rem;
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        background: black;
+        border-radius: 100%;
+    }
+
     &__heading {
         padding-bottom: 1rem;
     }
@@ -522,17 +533,16 @@ html {
 
  .owl-prev span {
      position: absolute;
-     top: 17px;
-     left: -77px;
+     top: 15%;
+     left: -5%;
  }
 
  .owl-next span {
     position: absolute;
-    top: 17px;
-    left: 1043px;
+    top: 15%;
+    right: -5%;
 }
  
-
-
+@import './mediaqueries-tablet.scss'
  //////////
  
