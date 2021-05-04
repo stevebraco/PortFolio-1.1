@@ -266,11 +266,14 @@ small {
 
 .profil {
   position: relative;
-  background: url("./img/iphone2-vierge.png") #e2e4f8 no-repeat;
-  width: 100%;
+  background: url("./img/background-blur.png") no-repeat;
   padding: 5rem;
-  background-position: -6% -6%;
-  background-size: auto;
+  background-position: top;
+  background-size: cover;
+  overflow: hidden;
+}
+.profil__container {
+  position: inherit;
 }
 .profil__title {
   display: block;
@@ -287,6 +290,14 @@ small {
   max-width: 30px;
   vertical-align: middle;
   padding-bottom: 1rem;
+}
+
+.iphone {
+  position: absolute;
+  right: -38rem;
+  top: 6rem;
+  max-width: 140rem;
+  transform: rotate(10deg);
 }
 
 .services__content {
@@ -310,13 +321,17 @@ small {
 .services__text {
   max-width: 60rem;
 }
+.services__listing-container {
+  display: flex;
+  flex-flow: column;
+  flex: 1 1;
+}
 .services__heading {
   padding-bottom: 3rem;
 }
 .services__listing {
   background: #ffede8;
   border-radius: 5px;
-  width: 30rem;
   padding: 3rem 4rem 5rem;
   margin-bottom: 2rem;
   transition: 0.3s;
@@ -372,6 +387,9 @@ small {
 }
 .project__card {
   padding-bottom: 5rem;
+  display: flex;
+  flex-flow: column;
+  flex: 1 1;
 }
 .project__container-card {
   flex-direction: column;
@@ -500,7 +518,7 @@ small {
   right: -5%;
 }
 
-@media screen and (max-width: 1160px) {
+@media screen and (max-width: 1170px) {
   .services__content, .project__wrapper {
     flex-direction: column;
     margin-bottom: 4rem;
@@ -520,32 +538,6 @@ small {
   .services__text, .project__text {
     max-width: 77rem;
     text-align: center;
-  }
-
-  .services__container {
-    gap: 1rem;
-  }
-
-  .services__listing {
-    width: 24rem;
-  }
-
-  .project__card {
-    max-width: 44rem;
-  }
-}
-@media screen and (max-width: 960px) {
-  .column {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .services__container {
-    justify-content: flex-start;
-  }
-
-  .services__listing {
-    width: 40rem;
   }
 }
 

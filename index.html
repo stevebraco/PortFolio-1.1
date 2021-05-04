@@ -1,426 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1x 0" />
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css" />
     <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header dp-flex container">
-        <a href="#">LOGO</a>
-        <nav class="navbar dp-flex">
-            <a class="navbar__link" href="#home">Accueil</a>
-            <a class="navbar__link" href="#services">Services</a>
-            <div class="dropdown">
-                <a class="navbar__link" href="#project" class="dropbtn">Projets
-                    <i class="fa fa-caret-down"></i>
-                </a>
-                <div class="dropdown-content">
-                    <a class="navbar__link" href="#project">Projets Récents</a>
-                    <a class="navbar__link" href="#otherproject">Autres Projets</a>
-                </div>
-            </div>
-            <a class="navbar__link" href="#contact">Contact</a>
-        </nav>
-        <a href="mailto:steve.braco@gmail.com" class="navbar__email">sbraco.dev@gmail.com <i
-                class="bx bx-mail-send"></i></a>
+      <a href="#">LOGO</a>
+      <nav class="navbar dp-flex">
+        <a class="navbar__link" href="#home">Accueil</a>
+        <a class="navbar__link" href="#services">Services</a>
+        <div class="dropdown">
+          <a class="navbar__link" href="#project" class="dropbtn"
+            >Projets
+            <i class="fa fa-caret-down"></i>
+          </a>
+          <div class="dropdown-content">
+            <a class="navbar__link" href="#project">Projets Récents</a>
+            <a class="navbar__link" href="#otherproject">Autres Projets</a>
+          </div>
+        </div>
+        <a class="navbar__link" href="#contact">Contact</a>
+      </nav>
+      <a href="mailto:steve.braco@gmail.com" class="navbar__email"
+        >sbraco.dev@gmail.com <i class="bx bx-mail-send"></i
+      ></a>
     </header>
     <main>
-        <section class="profil section container" id="home">
-            <div class="profil__container dp-flex">
-                <div class="profil__wrapper">
-                    <h1>
-                        Steve, <span class="profil__title">Développeur</span>
-                        <span class="profil__title"> Intégrateur</span> Web.
-                    </h1>
-                    <p class="profil__text">
-                        Je suis à votre disposition pour répondre à tout type de projets :
-                        création de sites internet vitrine, e-commerce, application web
-                        ...
-                    </p>
+      <section class="profil section container" id="home">
+        <img class='iphone' src="./img/iphone2-vierge.png" alt="" srcset="">
+        <div>
+        </div>
+        <div class="profil__container dp-flex">
+          <div class="profil__wrapper">
+            <h1>
+              Steve, <span class="profil__title">Développeur</span>
+              <span class="profil__title"> Intégrateur</span> Web.
+            </h1>
+            <p class="profil__text">
+              Je suis à votre disposition pour répondre à tout type de projets :
+              création de sites internet vitrine, e-commerce, application web
+              ...
+            </p>
 
-                    <div class="wrapper-btn">
-                        <a href="#" class="btn btn-black">Travaillons ensemble !
-                            <img class="profil__hands translate" src="./img/hands-right.png" alt="" srcset="" />
-                        </a>
-                    </div>
-                </div>
+            <div class="wrapper-btn">
+              <a href="#" class="btn btn-black"
+                >Travaillons ensemble !
+                <img
+                  class="profil__hands translate"
+                  src="./img/hands-right.png"
+                  alt=""
+                  srcset=""
+                />
+              </a>
             </div>
-        </section>
-        <section class="services section container" id="services">
-            <div class="services__content dp-flex">
-                <div class="wrapper-heading">
-                    <h2 class="services__title">Mes Services</h2>
-                </div>
-                <div>
-                    <p class="services__text">
-                        Passioné par le web et l'informatique, je vous accompage dans vos
-                        projets de site internet, de la création à la maintenance, en
-                        passant par l'intégration web et la refonte graphique.
-                    </p>
-                </div>
+          </div>
+        </div>
+      </section>
+      <section class="services section container" id="services">
+        <div class="services__content dp-flex">
+          <div class="wrapper-heading">
+            <h2 class="services__title">Mes Services</h2>
+          </div>
+          <div>
+            <p class="services__text">
+              Passioné par le web et l'informatique, je vous accompagne dans vos
+              projets de site internet, de la création à la maintenance, en
+              passant par l'intégration web et la refonte graphique.
+            </p>
+          </div>
+        </div>
+        <div class="services__container dp-flex">
+          <div class="services__listing-container">
+            <div class="services__listing">
+              <h3 class="services__heading">Langages</h3>
+              <ul>
+                <li class="services__list">HTML</li>
+                <li class="services__list">CSS</li>
+                <li class="services__list">Javascript</li>
+                <li class="services__list">PHP</li>
+              </ul>
             </div>
-            <div class="services__container dp-flex">
-                <div class="column">
-                    <div class="services__listing">
-                        <h3 class="services__heading">Langages</h3>
-                        <ul>
-                            <li class="services__list">HTML</li>
-                            <li class="services__list">CSS</li>
-                            <li class="services__list">Javascript</li>
-                            <li class="services__list">PHP</li>
-                        </ul>
-                    </div>
-                    <div class="services__listing framework">
-                        <h3 class="services__heading">Framework</h3>
-                        <ul>
-                            <li class="services__list">Express.js</li>
-                            <li class="services__list">Socket.io</li>
-                            <li class="services__list">Bootstrap</li>
-                            <li class="services__list">Semantic UI</li>
-                            <li class="services__list">Materialize</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="services__listing outils">
-                        <h3 class="services__heading">Outils</h3>
-                        <ul>
-                            <li class="services__list">Visual Studio Code</li>
-                            <li class="services__list">SASS</li>
-                            <li class="services__list">Responsive Web Design</li>
-                            <li class="services__list">Figma</li>
-                            <li class="services__list">Photoshop</li>
-                            <li class="services__list">Adode XD</li>
-                            <li class="services__list">Github</li>
-                            <li class="services__list">Lunacy</li>
-                        </ul>
-                    </div>
-                    <div class="services__listing cms">
-                        <h3 class="services__heading">CMS</h3>
-                        <ul>
-                            <li class="services__list">Wordpress</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="services__listing library">
-                        <h3 class="services__heading">Library</h3>
-                        <ul>
-                            <li class="services__list">React</li>
-                            <li class="services__list">JQuery</li>
-                            <li class="services__list">Redux</li>
-                        </ul>
-                    </div>
-
-                    <div class="services__listing database">
-                        <h3 class="services__heading">Database</h3>
-                        <ul>
-                            <li class="services__list">Mysql</li>
-                            <li class="services__list">MongoDB</li>
-                            <li class="services__list">Firebase</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="services__listing framework">
+              <h3 class="services__heading">Framework</h3>
+              <ul>
+                <li class="services__list">Express.js</li>
+                <li class="services__list">Socket.io</li>
+                <li class="services__list">Bootstrap</li>
+                <li class="services__list">Semantic UI</li>
+                <li class="services__list">Materialize</li>
+              </ul>
             </div>
-        </section>
-        <section class="section container project" id="project">
-            <div class="project__wrapper dp-flex">
-                <div class="wrapper-heading">
-                    <h2 class="project__title">Projets Récents</h2>
-                </div>
-                <p class="project__text">
-                    Chaque jour, j'aime me lancer de nouveaux défis que ce soit la
-                    réalisation de projets pour des clients ou la réalisation de 
-                    nouveaux projets.
-                </p>
+          </div>
+          <div class="services__listing-container">
+            <div class="services__listing outils">
+              <h3 class="services__heading">Outils</h3>
+              <ul>
+                <li class="services__list">Visual Studio Code</li>
+                <li class="services__list">SASS</li>
+                <li class="services__list">Responsive Web Design</li>
+                <li class="services__list">Figma</li>
+                <li class="services__list">Photoshop</li>
+                <li class="services__list">Adode XD</li>
+                <li class="services__list">Github</li>
+                <li class="services__list">Lunacy</li>
+              </ul>
             </div>
-            <div class="dp-flex spacebtwn">
-                <div class="project__container-card dp-flex">
-                    <div class="project__card">
-                        <a href="https://djogtherapy.com/" target="_blank" rel="noopener noreferrer">
-                            <img loading="lazy" class="project__img" src="/img/proj-kine.jpg" alt="" srcset="" />
-                            <h3 class="project__heading">Djog Therapy</h3>
-                        </a>
-                        <div class="project__langage">
-                            <span class="span-langage">React</span>
-                            <span class="span-langage">CSS</span>
-                            <span class="span-langage">SASS</span>
-                            <span class="span-langage">EmailJs</span>
-                        </div>
-                        <p class="project__content">
-                            Site pour un kinésiologue massothérapeute qui présente ces
-                            différentes types de prestations.
-                        </p>
-                    </div>
-
-                    <div class="project__card">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img loading="lazy" class="project__img" src="/img/marion-bienetre.png" alt="" srcset="" />
-                            <h3 class="project__heading">Marion Bien-être (en construction) </h3>
-                        </a>
-                        <!-- <div class="project__langage">HTML SASS PHP</div> -->
-                        <p class="project__content">
-                            Site pour une naturopathe qui présente ces
-                            différentes types de prestations.
-                        </p>
-                    </div>
-                    <div class="wrapper-btn">
-                        <a href="#otherproject" class="btn btn-black">
-                            Voir Autres Projets <i class="bx bxl-github translate"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project__container-card col-right dp-flex">
-                    <div class="project__card">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img loading="lazy" class="project__img" src="/img/liberte.jpg" alt="" srcset="" />
-                            <h3 class="project__heading">Liberte COLLECTION</h3>
-                        </a>
-                        <div class="project__langage">
-                            <span class="span-langage">React</span>
-                            <span class="span-langage">Redux</span>
-                            <span class="span-langage">CSS</span>
-                            <span class="span-langage">Node</span>
-                            <span class="span-langage">ExpressJs</span>
-                            <span class="span-langage">MongoDB</span>
-                            <span class="span-langage">Mongoose</span>
-                        </div>
-                        <p class="project__content">
-                            Construction d'un projet de vente avec solution d'accepter les paiements en ligne (PAYPAL,
-                            Stripe).
-                        </p>
-                    </div>
-                    <div class="project__card">
-                        <a href="#" target="_blank" rel="noopener noreferrer">
-                            <img loading="lazy" class="project__img" src="/img/dine-restaurant.png" alt="" srcset="" />
-                            <h3 class="project__heading">Dine Restaurant</h3>
-                        </a>
-                        <div class="project__langage"> <span class="span-langage">HTML</span> <span
-                                class="span-langage">CSS</span> <span class="span-langage">SASS</span> <span
-                                class="span-langage">Responsive</span> </div>
-                        <p class="project__content">
-                            Dine Restaurant est une présentation d'un restaurant avec
-                            réservation detable. Cette maquette a été trouvée sur
-                            frontendmentor
-                        </p>
-                    </div>
-                </div>
+            <div class="services__listing cms">
+              <h3 class="services__heading">CMS</h3>
+              <ul>
+                <li class="services__list">Wordpress</li>
+              </ul>
             </div>
-        </section>
-        <section class="project-bis section container" id="otherproject">
-            <div class="wrapper-heading">
-                <h2 class="project-bis__title">Autres Projets</h2>
-            </div>
-            <div class="owl-carousel">
-                <div>
-                    <a href="#" class="carousel__link" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/coauto.png" alt="" srcset="" />
-
-                        <h3 class="project__heading">Co'Auto</h3>
-                    </a>
-                    <div class="project__langage">
-                        HTML CSS JAVASCRIPT PHP AJAX JQUERY MYSQL
-                    </div>
-                    <p class="project__content">
-                        Projet de fin de formation de la 3WAcademy. Démontrer les compétences acquises durant la
-                        formation dans les 5 langages fondamentaux.
-                    </p>
-                </div>
-
-                <div>
-                    <a href="https://breakingapi.vercel.app/" class="carousel__link" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/breakingbadapi.png" alt="" srcset="" />
-
-                        <h3 class="project__heading">Breaking Bad API</h3>
-                    </a>
-                    <div class="project__langage">
-                        HTML CSS REACT JAVASCRIPT Axios
-                    </div>
-                    <p class="project__content">
-                        Mini-projet : Afficher des données d'une API dans une App React avec axios
-                    </p>
-                </div>
-
-                <div>
-                    <a class="carousel__link" href="https://dinner-restaurant.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/dine-restaurant.png" alt="" srcset="" />
-                        <h3 class="project__heading">Dine Restaurant</h3>
-                    </a>
-                    <div class="project__langage">HTML CSS JAVASCRIPT SASS</div>
-                    <p class="project__content">
-                        Présentation d'un restaurant avec réservation de table
-                    </p>
-                </div>
-
-                <div>
-                    <a class="carousel__link" href="https://landing-page-q12whegdn.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/landing.png" alt="" srcset="" />
-                        <h3 class="project__heading">Christmas Page</h3>
-                    </a>
-                    <div class="project__langage">HTML CSS JAVASCRIPT SASS</div>
-                    <p class="project__content">
-                        Une Landing page avec plusieurs animations CSS et JAVASCRIPT
-                    </p>
-                </div>
-
-                <div>
-                    <a class="project__heading" href="https://cookie-app.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/cookie.png" alt="" srcset="" />
-                        <h3 class="project__heading">Massiv' PEPIT</h3>
-                    </a>
-                    <div class="project__langage">HTML CSS JAVASCRIPT</div>
-                    <p class="project__content">
-                        Création du site à l'aide d'une maquette donnée par la 3Wacademy
-                    </p>
-                </div>
-
-                <div>
-                    <a class="project__heading" href="https://starbucks-green.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/starbucks.png" alt="" srcset="" />
-                        <h3 class="project__heading">Starbucks</h3>
-                    </a>
-                    <div class="project__langage">HTML CSS JAVASCRIPT SASS JQUERY</div>
-                    <p class="project__content">
-                        Mini-projet : Gérer les boutons d'événements avec jquery
-                    </p>
-                </div>
-
-                <div>
-                    <a class="project__heading" href="https://mycontacts.vercel.app/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/mycontacts.png" alt="" srcset="" />
-                        <h3 class="project__heading">My Contacts</h3>
-                    </a>
-                    <div class="project__langage">HTML CSS JAVASCRIPT SASS JQUERY Local Storage</div>
-                    <p class="project__content">
-                        Mini-projet : Application coté client, Stockage des données dans le navigateur grâce à Web
-                        storage. Utilsation du Framework Materialize CSS
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact section container" id="contact">
-            <div class="contact__wrapper dp-flex">
-                <div class="wrapper-heading-contact">
-                    <h2 class="contact__title">Me Contacter</h2>
-                </div>
-                <p class="contact__text">
-                    Envie d'échanger sur un projet, de me poser des questions ou autres
-                    ? N'hésitez pas en me contactant en remplissant ce formulaire.
-                </p>
+          </div>
+          <div class="services__listing-container">
+            <div class="services__listing library">
+              <h3 class="services__heading">Library</h3>
+              <ul>
+                <li class="services__list">React</li>
+                <li class="services__list">JQuery</li>
+                <li class="services__list">Redux</li>
+              </ul>
             </div>
 
-            <form action="index.php" method="POST" class="contact__form" id="form" autocomplete="off">
-                <div class="contact__container bd-container bd-flex">
-                    <div class="wrapper-input dp-flex">
-                        <div class="contact__group-input">
-                            <input type="text" class="contact__input" name="sujet" placeholder="Sujet" id="subject" />
-                            <small class="contact__error">Error Message</small>
-                        </div>
+            <div class="services__listing database">
+              <h3 class="services__heading">Database</h3>
+              <ul>
+                <li class="services__list">Mysql</li>
+                <li class="services__list">MongoDB</li>
+                <li class="services__list">Firebase</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section container project" id="project">
+        <div class="project__wrapper dp-flex">
+          <div class="wrapper-heading">
+            <h2 class="project__title">Projets Récents</h2>
+          </div>
+          <p class="project__text">
+            Chaque jour, j'aime me lancer de nouveaux défis que ce soit la
+            réalisation de projets pour des clients ou la réalisation de
+            nouveaux projets.
+          </p>
+        </div>
+        <div class="dp-flex spacebtwn">
+          <div class="project__container-card dp-flex">
+            <div class="project__card">
+              <a
+                href="https://djogtherapy.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  loading="lazy"
+                  class="project__img"
+                  src="/img/proj-kine.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <h3 class="project__heading">Djog Therapy</h3>
+              </a>
+              <div class="project__langage">
+                <span class="span-langage">React</span>
+                <span class="span-langage">CSS</span>
+                <span class="span-langage">SASS</span>
+                <span class="span-langage">EmailJs</span>
+              </div>
+              <p class="project__content">
+                Site pour un kinésiologue massothérapeute qui présente ces
+                différentes types de prestations.
+              </p>
+            </div>
 
-                        <div class="contact__group-input">
-                            <input type="email" name="email" class="contact__input" placeholder="Email" id="email" />
-                            <small class="contact__error">Error Message</small>
-                        </div>
-                    </div>
+            <div class="project__card">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  loading="lazy"
+                  class="project__img"
+                  src="/img/marion-bienetre.png"
+                  alt=""
+                  srcset=""
+                />
+                <h3 class="project__heading">
+                  Marion Bien-être (en construction)
+                </h3>
+              </a>
+              <!-- <div class="project__langage">HTML SASS PHP</div> -->
+              <p class="project__content">
+                Site pour une naturopathe qui présente ces différentes types de
+                prestations.
+              </p>
+            </div>
+            <div class="wrapper-btn">
+              <a href="#otherproject" class="btn btn-black">
+                Voir Autres Projets <i class="bx bxl-github translate"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project__container-card col-right dp-flex">
+            <div class="project__card">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  loading="lazy"
+                  class="project__img"
+                  src="/img/liberte.jpg"
+                  alt=""
+                  srcset=""
+                />
+                <h3 class="project__heading">Liberte COLLECTION</h3>
+              </a>
+              <div class="project__langage">
+                <span class="span-langage">React</span>
+                <span class="span-langage">Redux</span>
+                <span class="span-langage">CSS</span>
+                <span class="span-langage">Node</span>
+                <span class="span-langage">ExpressJs</span>
+                <span class="span-langage">MongoDB</span>
+                <span class="span-langage">Mongoose</span>
+              </div>
+              <p class="project__content">
+                Construction d'un projet de vente avec solution d'accepter les
+                paiements en ligne (PAYPAL, Stripe).
+              </p>
+            </div>
+            <div class="project__card">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <img
+                  loading="lazy"
+                  class="project__img"
+                  src="/img/dine-restaurant.png"
+                  alt=""
+                  srcset=""
+                />
+                <h3 class="project__heading">Dine Restaurant</h3>
+              </a>
+              <div class="project__langage">
+                <span class="span-langage">HTML</span>
+                <span class="span-langage">CSS</span>
+                <span class="span-langage">SASS</span>
+                <span class="span-langage">Responsive</span>
+              </div>
+              <p class="project__content">
+                Dine Restaurant est une présentation d'un restaurant avec
+                réservation detable. Cette maquette a été trouvée sur
+                frontendmentor
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="project-bis section container" id="otherproject">
+        <div class="wrapper-heading">
+          <h2 class="project-bis__title">Autres Projets</h2>
+        </div>
+        <div class="owl-carousel">
+          <div>
+            <a
+              href="#"
+              class="carousel__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/coauto.png" alt="" srcset="" />
 
-                    <div class="contact__group">
-                        <textarea class="contact__input textarea" name="text" id="text" placeholder="Message" cols="10"
-                            rows="10"></textarea>
-                        <small class="contact__error error-textarea">Error Message</small>
-                    </div>
+              <h3 class="project__heading">Co'Auto</h3>
+            </a>
+            <div class="project__langage">
+              HTML CSS JAVASCRIPT PHP AJAX JQUERY MYSQL
+            </div>
+            <p class="project__content">
+              Projet de fin de formation de la 3WAcademy. Démontrer les
+              compétences acquises durant la formation dans les 5 langages
+              fondamentaux.
+            </p>
+          </div>
 
-                    <button type="submit" name="submit" value="submit" class="btn btn-black">
-                        Envoyer
-                    </button>
-                </div>
-            </form>
-        </section>
+          <div>
+            <a
+              href="https://breakingapi.vercel.app/"
+              class="carousel__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/breakingbadapi.png" alt="" srcset="" />
+
+              <h3 class="project__heading">Breaking Bad API</h3>
+            </a>
+            <div class="project__langage">HTML CSS REACT JAVASCRIPT Axios</div>
+            <p class="project__content">
+              Mini-projet : Afficher des données d'une API dans une App React
+              avec axios
+            </p>
+          </div>
+
+          <div>
+            <a
+              class="carousel__link"
+              href="https://dinner-restaurant.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/dine-restaurant.png" alt="" srcset="" />
+              <h3 class="project__heading">Dine Restaurant</h3>
+            </a>
+            <div class="project__langage">HTML CSS JAVASCRIPT SASS</div>
+            <p class="project__content">
+              Présentation d'un restaurant avec réservation de table
+            </p>
+          </div>
+
+          <div>
+            <a
+              class="carousel__link"
+              href="https://landing-page-q12whegdn.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/landing.png" alt="" srcset="" />
+              <h3 class="project__heading">Christmas Page</h3>
+            </a>
+            <div class="project__langage">HTML CSS JAVASCRIPT SASS</div>
+            <p class="project__content">
+              Une Landing page avec plusieurs animations CSS et JAVASCRIPT
+            </p>
+          </div>
+
+          <div>
+            <a
+              class="project__heading"
+              href="https://cookie-app.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/cookie.png" alt="" srcset="" />
+              <h3 class="project__heading">Massiv' PEPIT</h3>
+            </a>
+            <div class="project__langage">HTML CSS JAVASCRIPT</div>
+            <p class="project__content">
+              Création du site à l'aide d'une maquette donnée par la 3Wacademy
+            </p>
+          </div>
+
+          <div>
+            <a
+              class="project__heading"
+              href="https://starbucks-green.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/starbucks.png" alt="" srcset="" />
+              <h3 class="project__heading">Starbucks</h3>
+            </a>
+            <div class="project__langage">HTML CSS JAVASCRIPT SASS JQUERY</div>
+            <p class="project__content">
+              Mini-projet : Gérer les boutons d'événements avec jquery
+            </p>
+          </div>
+
+          <div>
+            <a
+              class="project__heading"
+              href="https://mycontacts.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/mycontacts.png" alt="" srcset="" />
+              <h3 class="project__heading">My Contacts</h3>
+            </a>
+            <div class="project__langage">
+              HTML CSS JAVASCRIPT SASS JQUERY Local Storage
+            </div>
+            <p class="project__content">
+              Mini-projet : Application coté client, Stockage des données dans
+              le navigateur grâce à Web storage. Utilsation du Framework
+              Materialize CSS
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section container" id="contact">
+        <div class="contact__wrapper dp-flex">
+          <div class="wrapper-heading-contact">
+            <h2 class="contact__title">Me Contacter</h2>
+          </div>
+          <p class="contact__text">
+            Envie d'échanger sur un projet, de me poser des questions ou autres
+            ? N'hésitez pas en me contactant en remplissant ce formulaire.
+          </p>
+        </div>
+
+        <form
+          action="index.php"
+          method="POST"
+          class="contact__form"
+          id="form"
+          autocomplete="off"
+        >
+          <div class="contact__container bd-container bd-flex">
+            <div class="wrapper-input dp-flex">
+              <div class="contact__group-input">
+                <input
+                  type="text"
+                  class="contact__input"
+                  name="sujet"
+                  placeholder="Sujet"
+                  id="subject"
+                />
+                <small class="contact__error">Error Message</small>
+              </div>
+
+              <div class="contact__group-input">
+                <input
+                  type="email"
+                  name="email"
+                  class="contact__input"
+                  placeholder="Email"
+                  id="email"
+                />
+                <small class="contact__error">Error Message</small>
+              </div>
+            </div>
+
+            <div class="contact__group">
+              <textarea
+                class="contact__input textarea"
+                name="text"
+                id="text"
+                placeholder="Message"
+                cols="10"
+                rows="10"
+              ></textarea>
+              <small class="contact__error error-textarea">Error Message</small>
+            </div>
+
+            <button
+              type="submit"
+              name="submit"
+              value="submit"
+              class="btn btn-black"
+            >
+              Envoyer
+            </button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="footer section container">
-        <div class="footer__avatar">
-            <img src="./img/steve.png" alt="Steve">
+      <div class="footer__avatar">
+        <img src="./img/steve.png" alt="Steve" />
+      </div>
+      <div class="footer__container dp-flex">
+        <div class="footer__wrapper">
+          <h3 class="footer__heading">Menu</h3>
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#project">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div class="footer__container dp-flex">
-            <div class="footer__wrapper">
-                <h3 class="footer__heading">Menu</h3>
-                <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#project">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
 
-            <div class="footer__wrapper">
-                <h3 class="footer__heading">Me Suivre</h3>
-                <ul>
-                    <li><a href="https://github.com/elbraco">Github</a></li>
-                    <li><a href="https://www.facebook.com/steve.braco">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/brac_dev/">Instagram</a></li>
-                    <li><a href="#"> Malt</a></li>
-                </ul>
-            </div>
-            <div class="footer__wrapper">
-                <h3 class="footer__heading">Email</h3>
-                <ul>
-                    <li><a href="mailto:steve.braco@gmail.com">steve.braco@gmail.com</a></li>
-                </ul>
-            </div>
+        <div class="footer__wrapper">
+          <h3 class="footer__heading">Me Suivre</h3>
+          <ul>
+            <li><a href="https://github.com/elbraco">Github</a></li>
+            <li><a href="https://www.facebook.com/steve.braco">Facebook</a></li>
+            <li><a href="https://www.instagram.com/brac_dev/">Instagram</a></li>
+            <li><a href="#"> Malt</a></li>
+          </ul>
         </div>
-        <small>Copyright © 2021 Braco. All rights reserved.</small>
+        <div class="footer__wrapper">
+          <h3 class="footer__heading">Email</h3>
+          <ul>
+            <li>
+              <a href="mailto:steve.braco@gmail.com">steve.braco@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <small>Copyright © 2021 Braco. All rights reserved.</small>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
     <script>
-        var owl = $(".owl-carousel");
-        owl.owlCarousel({
-            // items: 3,
-            loop: true,
-            margin: 20,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            autoplayHoverPause: true,
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        // items: 3,
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        nav: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
             nav: true,
-            responsiveClass:true,
-            responsive:{
-        0:{
-            items:1,
-            nav:true
+          },
+          950: {
+            items: 1,
+            nav: false,
+          },
+          1000: {
+            items: 3,
+            nav: true,
+          },
         },
-        950:{
-            items:1,
-            nav:false,
-
-        },
-        1000:{
-            items:3,
-            nav:true,
-        }
-    }
-        });
-        $(".play").on("click", function () {
-            owl.trigger("play.owl.autoplay", [1000]);
-        });
-        $(".stop").on("click", function () {
-            owl.trigger("stop.owl.autoplay");
-        });
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [1000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
     </script>
-</body>
-
+  </body>
 </html>
