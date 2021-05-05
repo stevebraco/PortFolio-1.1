@@ -20,8 +20,8 @@ html {
 
     }
     h1 {
-        font-size: 9rem;
-        line-height: 9rem;
+        font-size: 12rem;
+        line-height: 11rem;
         letter-spacing: 5px;
         color: #212121;
     }
@@ -201,13 +201,12 @@ html {
     }
    
   }
+  .navbar--footer {
+      align-items: flex-start;
+  }
   
+ 
   
-  
-   .dropdown {
-     float: left;
-     overflow: hidden;
-   }
   
   
   
@@ -217,7 +216,7 @@ html {
 
 .profil {
     position: relative;
-    background:  url('./img/background-blur.png') no-repeat;
+    background: url('./img/background-blur.png') no-repeat;
     padding: 5rem;
     background-position: top;
     background-size: cover;
@@ -363,9 +362,9 @@ html {
         max-width: 60rem;
     }
 
-    &__container {
-        gap: 3rem;
-    }
+    // &__container {
+    //     gap: 3rem;
+    // }
 
     
 
@@ -381,6 +380,8 @@ html {
         flex-direction: column;
         width: 48%;
     }
+
+   
     
     &__img {
         padding-bottom: 1rem;
@@ -479,63 +480,41 @@ html {
 
  .footer {
     position: relative;
-    background:  url('./img/iphone2-vierge.png') #e2e4f8 no-repeat;
-    background-position: 117% 35%;
+    background: url('./img/background-blur.png') no-repeat;
+    background-size: cover;
+    padding: 5rem 3rem;
+    border-radius: 15px;
+
 
     &__avatar {
-        max-width: 9rem;
+        max-width: 5rem;
         position: absolute;
         bottom: 10px;
-        left: 20px;
+        left: 10px;
         background: black;
         border-radius: 100%;
     }
 
-    &__heading {
-        padding-bottom: 1rem;
-    }
+    
 
     &__container {
-        justify-content: flex-end;
-        transform: translateY(-65px);
+        justify-content: space-between;
+        align-items: baseline;
     }
 
-    &__wrapper {
-        margin-left: 5rem;
+    &__link {
+        color: #212121;
+    }
+
+    &__info {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 3rem;
     }
 
  }
 
  
-
- //CAROUSEL
- .owl-carousel {
-     position: relative;
- }
- 
-
- .owl-prev span, .owl-next span {
-     font-size: 10rem;
-     transition: .5s;
-     color: black;
-
-     &:hover {
-    background: rgb(239, 234, 252);
-    color: whitesmoke;
-     }
- }
-
- .owl-prev span {
-     position: absolute;
-     top: 15%;
-     left: -5%;
- }
-
- .owl-next span {
-    position: absolute;
-    top: 15%;
-    right: -5%;
-}
  
 @import './mediaqueries-tablet.scss';
 @import './mediaqueries-mobile.scss';

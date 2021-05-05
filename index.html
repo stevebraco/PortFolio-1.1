@@ -30,7 +30,7 @@
     </header>
     <main>
       <section class="profil section container" id="home">
-        <img class="iphone" src="./img/iphone2-vierge.png" alt="" srcset="" />
+        <!-- <img class="iphone" src="./img/iphone2-vierge1.png" alt="" srcset="" /> -->
         <div></div>
         <div class="profil__container dp-flex">
           <div class="profil__wrapper">
@@ -65,7 +65,7 @@
           </div>
           <div>
             <p class="services__text">
-              Passioné par le web et l'informatique, je vous accompagne dans vos
+              Passionné par le web et l'informatique, je vous accompagne dans vos
               projets de site internet, de la création à la maintenance, en
               passant par l'intégration web et la refonte graphique.
             </p>
@@ -186,7 +186,7 @@
                 <img
                   loading="lazy"
                   class="project__img"
-                  src="/img/audiophile.jpg"
+                  src="/img/audiophile.jpeg"
                   alt="audiophile"
                 />
                 <h3 class="project__heading">Audiophile</h3>
@@ -215,7 +215,7 @@
                 <img
                   loading="lazy"
                   class="project__img"
-                  src="/img/liberte.jpg"
+                  src="/img/liberte.jpeg"
                   alt=""
                   srcset=""
                 />
@@ -334,76 +334,36 @@
         </form>
       </section>
     </main>
-    <footer class="footer section container">
+    <footer class="footer  container">
       <div class="footer__avatar">
         <img src="./img/steve.png" alt="Steve" />
       </div>
       <div class="footer__container dp-flex">
+        <nav class="navbar navbar--footer dp-flex">
+          <a class="navbar__link footer__link " href="#home">Accueil</a>
+          <a class="navbar__link footer__link " href="#services">Services</a>
+          <a class="navbar__link footer__link " href="#project" class="dropbtn">Projets </a>
+          <a class="navbar__link footer__link " href="#contact">Contact</a>
+        </nav>
+        <div class="dp-flex footer__info">
         <div class="footer__wrapper">
-          <h3 class="footer__heading">Menu</h3>
-          <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#project">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__wrapper">
-          <h3 class="footer__heading">Me Suivre</h3>
-          <ul>
-            <li><a href="https://github.com/elbraco">Github</a></li>
-            <li><a href="https://www.facebook.com/steve.braco">Facebook</a></li>
-            <li><a href="https://www.instagram.com/brac_dev/">Instagram</a></li>
-            <li><a href="#"> Malt</a></li>
-          </ul>
+          
+          <a  class="footer__link" href="https://github.com/elbraco" >Github</a>
+          <a  class="footer__link" href="https://www.facebook.com/steve.braco" >Facebook</a>
+          <a  class="footer__link" href="https://www.instagram.com/brac_dev/" >Instagram</a>
+          <a  class="footer__link" href="#" > Malt</a></li>
+          
         </div>
         <div class="footer__wrapper">
-          <h3 class="footer__heading">Email</h3>
-          <ul>
-            <li>
-              <a href="mailto:steve.braco@gmail.com">steve.braco@gmail.com</a>
-            </li>
-          </ul>
+              <a class="footer__link" href="mailto:steve.braco@gmail.com">steve.braco@gmail.com</a>
         </div>
+      </div>
       </div>
       <small>Copyright © 2021 Braco. All rights reserved.</small>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
-    <script>
-      var owl = $(".owl-carousel");
-      owl.owlCarousel({
-        // items: 3,
-        loop: true,
-        margin: 20,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: true,
-        nav: true,
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-            nav: true,
-          },
-          950: {
-            items: 1,
-            nav: false,
-          },
-          1000: {
-            items: 3,
-            nav: true,
-          },
-        },
-      });
-      $(".play").on("click", function () {
-        owl.trigger("play.owl.autoplay", [1000]);
-      });
-      $(".stop").on("click", function () {
-        owl.trigger("stop.owl.autoplay");
-      });
-    </script>
+    
   </body>
 </html>

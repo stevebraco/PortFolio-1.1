@@ -1,13 +1,14 @@
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
     .container {
         max-width: calc(100% - 1rem);
     }
     .section {
-        padding: 10rem 1rem;
+        padding: 5rem 3rem;
     }
     h1 {
-        font-size: 4.4rem;
+        font-size: 7rem;
         line-height: initial;
+        text-align: center;
     }
 
     h2 {
@@ -20,8 +21,8 @@
         line-height: 2.5rem;
     }
    
-    .iphone {
-        display: none;
+    .profil__title {
+        display: initial;
     }
 
     .profil__text {
@@ -33,10 +34,12 @@
         justify-content: center;
     }
 
+     
+
     .services__title::after, .project__title::after, .contact__title::after {
-        font-size: 4rem;
-        top: -31px;
-        left: -31px;
+        font-size: 3rem;
+        top: -33px;
+        left: -25px;
 
     }
 

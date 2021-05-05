@@ -67,8 +67,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 9rem;
-  line-height: 9rem;
+  font-size: 12rem;
+  line-height: 11rem;
   letter-spacing: 5px;
   color: #212121;
 }
@@ -233,9 +233,8 @@ small {
   color: #212121;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+.navbar--footer {
+  align-items: flex-start;
 }
 
 .profil {
@@ -359,9 +358,6 @@ small {
 .project__text {
   max-width: 60rem;
 }
-.project__container {
-  gap: 3rem;
-}
 .project__card {
   padding-bottom: 5rem;
   display: flex;
@@ -447,52 +443,30 @@ small {
 
 .footer {
   position: relative;
-  background: url("./img/iphone2-vierge.png") #e2e4f8 no-repeat;
-  background-position: 117% 35%;
+  background: url("./img/background-blur.png") no-repeat;
+  background-size: cover;
+  padding: 5rem 3rem;
+  border-radius: 15px;
 }
 .footer__avatar {
-  max-width: 9rem;
+  max-width: 5rem;
   position: absolute;
   bottom: 10px;
-  left: 20px;
+  left: 10px;
   background: black;
   border-radius: 100%;
 }
-.footer__heading {
-  padding-bottom: 1rem;
-}
 .footer__container {
-  justify-content: flex-end;
-  transform: translateY(-65px);
+  justify-content: space-between;
+  align-items: baseline;
 }
-.footer__wrapper {
-  margin-left: 5rem;
+.footer__link {
+  color: #212121;
 }
-
-.owl-carousel {
-  position: relative;
-}
-
-.owl-prev span, .owl-next span {
-  font-size: 10rem;
-  transition: 0.5s;
-  color: black;
-}
-.owl-prev span:hover, .owl-next span:hover {
-  background: #efeafc;
-  color: whitesmoke;
-}
-
-.owl-prev span {
-  position: absolute;
-  top: 15%;
-  left: -5%;
-}
-
-.owl-next span {
-  position: absolute;
-  top: 15%;
-  right: -5%;
+.footer__info {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3rem;
 }
 
 @media screen and (max-width: 1170px) {
@@ -518,6 +492,16 @@ small {
   }
 }
 @media screen and (max-width: 967px) {
+  h1 {
+    font-size: 9rem;
+    line-height: 8rem;
+  }
+
+  .project__content {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
   .iphone {
     position: absolute;
     right: -50rem;
@@ -525,31 +509,31 @@ small {
     max-width: 140rem;
   }
 
-  .col-right {
-    transform: translateY(0);
+  .project__card, .project__container-card, .project__img {
+    width: 100%;
   }
 
   .project__container {
     flex-direction: column-reverse;
-    gap: 0;
   }
 
-  .project__container-card {
-    width: 100%;
+  .col-right {
+    transform: translateY(0);
   }
 }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 770px) {
   .container {
     max-width: calc(100% - 1rem);
   }
 
   .section {
-    padding: 10rem 1rem;
+    padding: 5rem 3rem;
   }
 
   h1 {
-    font-size: 4.4rem;
+    font-size: 7rem;
     line-height: initial;
+    text-align: center;
   }
 
   h2 {
@@ -562,8 +546,8 @@ small {
     line-height: 2.5rem;
   }
 
-  .iphone {
-    display: none;
+  .profil__title {
+    display: initial;
   }
 
   .profil__text {
@@ -576,13 +560,14 @@ small {
   }
 
   .services__title::after, .project__title::after, .contact__title::after {
-    font-size: 4rem;
-    top: -31px;
-    left: -31px;
+    font-size: 3rem;
+    top: -33px;
+    left: -25px;
   }
 
   .services__container {
     flex-direction: column;
+    gap: 0;
   }
 
   .services__listing-container {
