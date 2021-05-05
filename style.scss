@@ -20,7 +20,7 @@ html {
 
     }
     h1 {
-        font-size: 12rem;
+        font-size: 10rem;
         line-height: 11rem;
         letter-spacing: 5px;
         color: #212121;
@@ -216,7 +216,7 @@ html {
 
 .profil {
     position: relative;
-    background: url('./img/background-blur.png') no-repeat;
+    background: #fcf4e3;
     padding: 5rem;
     background-position: top;
     background-size: cover;
@@ -228,12 +228,12 @@ html {
    
 
     &__title {
-        display: block;
+        max-width: 91rem;
     }
 
-    &__wrapper {
-        max-width: 65rem;
-    }
+   .profil__wrapper {
+       width: 100%;
+   }
 
     &__text {
         padding-top: 3rem;

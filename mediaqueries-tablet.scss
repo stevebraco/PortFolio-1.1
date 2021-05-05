@@ -26,8 +26,11 @@
 
 @media screen and (max-width: 967px) {
     h1 {
-        font-size: 9rem;
+        font-size: 7rem;
         line-height: 8rem;
+    }
+    .profil__title {
+        max-width: 65rem;
     }
     .project__content {
         font-size: 1.3rem;
@@ -39,8 +42,7 @@
         top: 22rem;
         max-width: 140rem;
     }
-    .col-right {
-    }
+   
     .project__card, .project__container-card, .project__img {
         width: 100%;
     }

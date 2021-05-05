@@ -67,7 +67,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 12rem;
+  font-size: 10rem;
   line-height: 11rem;
   letter-spacing: 5px;
   color: #212121;
@@ -239,7 +239,7 @@ small {
 
 .profil {
   position: relative;
-  background: url("./img/background-blur.png") no-repeat;
+  background: #fcf4e3;
   padding: 5rem;
   background-position: top;
   background-size: cover;
@@ -249,10 +249,10 @@ small {
   position: inherit;
 }
 .profil__title {
-  display: block;
+  max-width: 91rem;
 }
-.profil__wrapper {
-  max-width: 65rem;
+.profil .profil__wrapper {
+  width: 100%;
 }
 .profil__text {
   padding-top: 3rem;
@@ -493,8 +493,12 @@ small {
 }
 @media screen and (max-width: 967px) {
   h1 {
-    font-size: 9rem;
+    font-size: 7rem;
     line-height: 8rem;
+  }
+
+  .profil__title {
+    max-width: 65rem;
   }
 
   .project__content {
@@ -527,13 +531,12 @@ small {
   }
 
   .section {
-    padding: 5rem 3rem;
+    padding: 5rem 1rem;
   }
 
   h1 {
-    font-size: 7rem;
+    font-size: 4.7rem;
     line-height: initial;
-    text-align: center;
   }
 
   h2 {
@@ -542,12 +545,8 @@ small {
   }
 
   p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     line-height: 2.5rem;
-  }
-
-  .profil__title {
-    display: initial;
   }
 
   .profil__text {
