@@ -1,12 +1,39 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;800&display=swap");
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: normal;
 }
@@ -15,7 +42,9 @@ ul {
   list-style: none;
 }
 
-button, input, select {
+button,
+input,
+select {
   margin: 0;
 }
 
@@ -23,11 +52,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-img, video {
+img,
+video {
   height: auto;
   max-width: 100%;
 }
@@ -41,7 +73,8 @@ table {
   border-spacing: 0;
 }
 
-td, th {
+td,
+th {
   padding: 0;
 }
 
@@ -51,7 +84,9 @@ html {
   scroll-behavior: smooth;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -63,7 +98,9 @@ body {
   line-height: 2.5rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: bolder;
 }
 
@@ -89,14 +126,15 @@ h3 {
 
 a {
   text-decoration: none;
-  color: #6E6D7A;
+  color: #6e6d7a;
 }
 
 p {
   font-weight: 400;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
   border: 1px #dfe0e2 solid;
   border-radius: 3px;
@@ -177,7 +215,7 @@ small {
 
 .span-langage {
   display: inline-block;
-  color: #6E6D7A;
+  color: #6e6d7a;
   background: #d8d8d8;
   padding: 0.3rem 0.3rem;
   margin-top: 0.5rem;
@@ -216,7 +254,7 @@ small {
 }
 .navbar__link {
   float: left;
-  color: #6E6D7A;
+  color: #6e6d7a;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -239,7 +277,7 @@ small {
 
 .profil {
   position: relative;
-  background: #fcf4e3;
+  background: #ffd5c9;
   padding: 5rem;
   background-position: top;
   background-size: cover;
