@@ -20,16 +20,8 @@
       <nav class="navbar dp-flex">
         <a class="navbar__link" href="#home">Accueil</a>
         <a class="navbar__link" href="#services">Services</a>
-        <div class="dropdown">
-          <a class="navbar__link" href="#project" class="dropbtn"
-            >Projets
-            <i class="fa fa-caret-down"></i>
-          </a>
-          <div class="dropdown-content">
-            <a class="navbar__link" href="#project">Projets Récents</a>
-            <a class="navbar__link" href="#otherproject">Autres Projets</a>
-          </div>
-        </div>
+        <a class="navbar__link" href="#project" class="dropbtn">Projets </a>
+
         <a class="navbar__link" href="#contact">Contact</a>
       </nav>
       <a href="mailto:steve.braco@gmail.com" class="navbar__email"
@@ -38,9 +30,8 @@
     </header>
     <main>
       <section class="profil section container" id="home">
-        <img class='iphone' src="./img/iphone2-vierge.png" alt="" srcset="">
-        <div>
-        </div>
+        <img class="iphone" src="./img/iphone2-vierge.png" alt="" srcset="" />
+        <div></div>
         <div class="profil__container dp-flex">
           <div class="profil__wrapper">
             <h1>
@@ -114,6 +105,8 @@
                 <li class="services__list">Adode XD</li>
                 <li class="services__list">Github</li>
                 <li class="services__list">Lunacy</li>
+                <li class="services__list">Méthode BEM</li>
+                <li class="services__list">Standards web W3c</li>
               </ul>
             </div>
             <div class="services__listing cms">
@@ -185,26 +178,33 @@
             </div>
 
             <div class="project__card">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://audiophile.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   loading="lazy"
                   class="project__img"
-                  src="/img/marion-bienetre.png"
-                  alt=""
-                  srcset=""
+                  src="/img/audiophile.jpg"
+                  alt="audiophile"
                 />
-                <h3 class="project__heading">
-                  Marion Bien-être (en construction)
-                </h3>
+                <h3 class="project__heading">Audiophile</h3>
               </a>
-              <!-- <div class="project__langage">HTML SASS PHP</div> -->
+              <div class="project__langage">
+                <span class="span-langage">React</span>
+                <span class="span-langage">Redux</span>
+                <span class="span-langage">CSS</span>
+                <span class="span-langage">SASS</span>
+                <span class="span-langage">Web Storage</span>
+              </div>
               <p class="project__content">
-                Site pour une naturopathe qui présente ces différentes types de
-                prestations.
+                Réalisation du site à l'aide d'une maquette prise sur FrontEnd
+                Mentor
               </p>
             </div>
             <div class="wrapper-btn">
-              <a href="#otherproject" class="btn btn-black">
+              <a href="https://github.com/stevebraco" class="btn btn-black">
                 Voir Autres Projets <i class="bx bxl-github translate"></i>
               </a>
             </div>
@@ -227,35 +227,37 @@
                 <span class="span-langage">CSS</span>
                 <span class="span-langage">Node</span>
                 <span class="span-langage">ExpressJs</span>
+                <span class="span-langage">Axios</span>
                 <span class="span-langage">MongoDB</span>
                 <span class="span-langage">Mongoose</span>
+                <span class="span-langage">PayPal</span>
+                <span class="span-langage">Stripe</span>
               </div>
               <p class="project__content">
-                Construction d'un projet de vente avec solution d'accepter les
-                paiements en ligne (PAYPAL, Stripe).
+                Construction d'un projet de vente en ligne avec Express et React
               </p>
             </div>
             <div class="project__card">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://instagram-clone-react-732e9.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   loading="lazy"
                   class="project__img"
-                  src="/img/dine-restaurant.png"
-                  alt=""
-                  srcset=""
+                  src="/img/insta.png"
+                  alt="clone instagram"
                 />
-                <h3 class="project__heading">Dine Restaurant</h3>
+                <h3 class="project__heading">Instagram Clone</h3>
               </a>
               <div class="project__langage">
-                <span class="span-langage">HTML</span>
+                <span class="span-langage">React</span>
                 <span class="span-langage">CSS</span>
-                <span class="span-langage">SASS</span>
-                <span class="span-langage">Responsive</span>
+                <span class="span-langage">Firebase</span>
               </div>
               <p class="project__content">
-                Dine Restaurant est une présentation d'un restaurant avec
-                réservation detable. Cette maquette a été trouvée sur
-                frontendmentor
+                Un réseau social avec en base de donnée Firebase.
               </p>
             </div>
           </div>
@@ -278,7 +280,14 @@
               <h3 class="project__heading">Co'Auto</h3>
             </a>
             <div class="project__langage">
-              HTML CSS JAVASCRIPT PHP AJAX JQUERY MYSQL
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">Javascript</span>
+              <span class="span-langage">PHP</span>
+              <span class="span-langage">AJAX</span>
+              <span class="span-langage">JQuery</span>
+              <span class="span-langage">Mysql</span>
+              <span class="span-langage">Web Storage</span>
             </div>
             <p class="project__content">
               Projet de fin de formation de la 3WAcademy. Démontrer les
@@ -298,7 +307,12 @@
 
               <h3 class="project__heading">Breaking Bad API</h3>
             </a>
-            <div class="project__langage">HTML CSS REACT JAVASCRIPT Axios</div>
+            <div class="project__langage">
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">Javascript</span>
+              <span class="span-langage">Axios</span>
+            </div>
             <p class="project__content">
               Mini-projet : Afficher des données d'une API dans une App React
               avec axios
@@ -315,7 +329,12 @@
               <img src="./img/dine-restaurant.png" alt="" srcset="" />
               <h3 class="project__heading">Dine Restaurant</h3>
             </a>
-            <div class="project__langage">HTML CSS JAVASCRIPT SASS</div>
+            <div class="project__langage">
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">SASS</span>
+              <span class="span-langage">Javascript</span>
+            </div>
             <p class="project__content">
               Présentation d'un restaurant avec réservation de table
             </p>
@@ -331,7 +350,13 @@
               <img src="./img/landing.png" alt="" srcset="" />
               <h3 class="project__heading">Christmas Page</h3>
             </a>
-            <div class="project__langage">HTML CSS JAVASCRIPT SASS</div>
+            <div class="project__langage">
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">SASS</span>
+              <span class="span-langage">Javascript</span>
+              <span class="span-langage">RevealJS</span>
+            </div>
             <p class="project__content">
               Une Landing page avec plusieurs animations CSS et JAVASCRIPT
             </p>
@@ -347,7 +372,11 @@
               <img src="./img/cookie.png" alt="" srcset="" />
               <h3 class="project__heading">Massiv' PEPIT</h3>
             </a>
-            <div class="project__langage">HTML CSS JAVASCRIPT</div>
+            <div class="project__langage">
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">Javascript</span>
+            </div>
             <p class="project__content">
               Création du site à l'aide d'une maquette donnée par la 3Wacademy
             </p>
@@ -363,7 +392,13 @@
               <img src="./img/starbucks.png" alt="" srcset="" />
               <h3 class="project__heading">Starbucks</h3>
             </a>
-            <div class="project__langage">HTML CSS JAVASCRIPT SASS JQUERY</div>
+            <div class="project__langage">
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">SASS</span>
+              <span class="span-langage">Javascript</span>
+              <span class="span-langage">JQuery</span>
+            </div>
             <p class="project__content">
               Mini-projet : Gérer les boutons d'événements avec jquery
             </p>
@@ -380,7 +415,12 @@
               <h3 class="project__heading">My Contacts</h3>
             </a>
             <div class="project__langage">
-              HTML CSS JAVASCRIPT SASS JQUERY Local Storage
+              <span class="span-langage">HTML</span>
+              <span class="span-langage">CSS</span>
+              <span class="span-langage">SASS</span>
+              <span class="span-langage">Javascript</span>
+              <span class="span-langage">JQuery</span>
+              <span class="span-langage">Web Storage</span>
             </div>
             <p class="project__content">
               Mini-projet : Application coté client, Stockage des données dans
