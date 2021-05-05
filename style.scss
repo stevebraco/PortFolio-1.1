@@ -10,10 +10,12 @@ html {
   }
 
   body {
-      font-size: 1.4rem;
+      font-size: 1.7rem;
       font-family: 'Inter', sans-serif;
       color: #424242;
       letter-spacing: .3px;
+      line-height: 2.5rem;
+
     }
     h1, h2, h3 {
         font-weight: bolder;
@@ -31,6 +33,7 @@ html {
         font-size: 6rem;
         letter-spacing: 5px;
         color: #424242;
+        line-height: 5.5rem;
 
 
     }
@@ -48,9 +51,7 @@ html {
     }
 
     p {
-        font-size: 2rem;
         font-weight: 400;
-        line-height: 3rem;
     }
 
     input, textarea {
@@ -75,8 +76,8 @@ html {
     }
 
     li {
+        font-size: 1.4rem;
         padding-bottom: 1rem;
-        font-size: 1.6rem;
         transition: .3s;
 
         & a:hover {
@@ -229,6 +230,10 @@ html {
 
     &__title {
         max-width: 91rem;
+    }
+
+    &__heading {
+        display: block;
     }
 
    .profil__wrapper {
@@ -480,8 +485,7 @@ html {
 
  .footer {
     position: relative;
-    background: url('./img/background-blur.png') no-repeat;
-    background-size: cover;
+    background-color: #e2e4f8;
     padding: 5rem 3rem;
     border-radius: 15px;
 

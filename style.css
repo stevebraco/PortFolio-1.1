@@ -56,10 +56,11 @@ html {
 }
 
 body {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-family: "Inter", sans-serif;
   color: #424242;
   letter-spacing: 0.3px;
+  line-height: 2.5rem;
 }
 
 h1, h2, h3 {
@@ -78,6 +79,7 @@ h2 {
   font-size: 6rem;
   letter-spacing: 5px;
   color: #424242;
+  line-height: 5.5rem;
 }
 
 h3 {
@@ -91,9 +93,7 @@ a {
 }
 
 p {
-  font-size: 2rem;
   font-weight: 400;
-  line-height: 3rem;
 }
 
 input, textarea {
@@ -118,8 +118,8 @@ button {
 }
 
 li {
+  font-size: 1.4rem;
   padding-bottom: 1rem;
-  font-size: 1.6rem;
   transition: 0.3s;
 }
 li a:hover {
@@ -250,6 +250,9 @@ small {
 }
 .profil__title {
   max-width: 91rem;
+}
+.profil__heading {
+  display: block;
 }
 .profil .profil__wrapper {
   width: 100%;
@@ -443,8 +446,7 @@ small {
 
 .footer {
   position: relative;
-  background: url("./img/background-blur.png") no-repeat;
-  background-size: cover;
+  background-color: #e2e4f8;
   padding: 5rem 3rem;
   border-radius: 15px;
 }
@@ -487,7 +489,7 @@ small {
   }
 
   .services__text, .project__text, .contact__text {
-    max-width: 77rem;
+    max-width: 58rem;
     text-align: center;
   }
 }
@@ -495,6 +497,11 @@ small {
   h1 {
     font-size: 7rem;
     line-height: 8rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   .profil__title {
@@ -527,15 +534,14 @@ small {
 }
 @media screen and (max-width: 770px) {
   .container {
-    max-width: calc(100% - 1rem);
+    max-width: calc(100% - 4rem);
   }
 
   .section {
-    padding: 5rem 1rem;
+    padding: 5rem 5rem;
   }
 
   h1 {
-    font-size: 4.7rem;
     line-height: initial;
   }
 
@@ -545,13 +551,14 @@ small {
   }
 
   p {
-    font-size: 1.3rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .profil__text {
     text-align: center;
-    max-width: initial;
+    line-height: 2rem;
+    margin: 0 auto;
   }
 
   .wrapper-btn {
@@ -573,9 +580,30 @@ small {
     width: 100%;
   }
 
-  .footer {
-    background: none;
-    background-color: #e2e4f8;
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__info {
+    align-items: center;
+  }
+
+  .footer__link {
+    padding: 14px 9px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .container {
+    max-width: calc(100% - 1rem);
+  }
+
+  .section {
+    padding: 5rem 1rem;
+  }
+
+  h1 {
+    font-size: 4.5rem;
   }
 }
 

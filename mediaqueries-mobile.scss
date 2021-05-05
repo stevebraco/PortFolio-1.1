@@ -1,12 +1,11 @@
 @media screen and (max-width: 770px) {
     .container {
-        max-width: calc(100% - 1rem);
+        max-width: calc(100% - 4rem);
     }
     .section {
-        padding: 5rem 1rem;
+        padding: 5rem 5rem;
     }
     h1 {
-        font-size: 4.7rem;
         line-height: initial;
     }
 
@@ -16,15 +15,16 @@
     }
 
     p {
-        font-size: 1.3rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
    
     
 
     .profil__text {
         text-align: center;
-        max-width: initial;
+        line-height: 2rem;
+        margin: 0 auto;
     }
 
     .wrapper-btn {
@@ -49,8 +49,30 @@
         width: 100%;
     }
 
-    .footer {
-        background: none;
-        background-color: #e2e4f8;
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__info {
+        align-items: center;
+    }
+    .footer__link {
+        padding: 14px 9px;
+
+    }
 }
+
+@media screen and (max-width: 590px) {
+
+    .container {
+        max-width: calc(100% - 1rem);
+    }
+    .section {
+        padding: 5rem 1rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+
 }
+
