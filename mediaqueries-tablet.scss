@@ -4,47 +4,41 @@
         margin-bottom: 4rem;
     }
 
-    .wrapper-heading {
+    .wrapper-heading, .wrapper-heading-contact {
         max-width: 100%;
         padding-left: 0;
         padding-bottom: 2rem;
     }
 
-     .services__title::after, .project__title::after {
+     .services__title::after, .project__title::after, .contact__title::after {
          font-size: 6rem;
          top: -25px;
      }
     
-     .services__text, .project__text {
+     .services__text, .project__text, .contact__text  {
          max-width: 77rem;
          text-align: center;
      }
 
-    //  .services__container {
-    //      gap: 1rem
-    //  }
-    //  .services__listing {
-    //      width: 24rem;
-    //  }
-
-    //  .project__card {
-    //     max-width: 44rem;
-    // }
     
-   
 }
-// // test 
-// @media screen and (max-width: 960px) {
 
-//     .column {
-//         display: flex;
-//         gap: 1rem;
-//     }
-//     .services__container {
-//        justify-content:  flex-start;
-//     }
+@media screen and (max-width: 967px) {
+    .iphone {
+        position: absolute;
+        right: -50rem;
+        top: 22rem;
+        max-width: 140rem;
+    }
+    .col-right {
+        transform: translateY(0)
+    }
+    .project__container {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .project__container-card {
+        width: 100%;
+    }
+}
 
-//     .services__listing {
-//         width: 40rem;
-//     }
-// }

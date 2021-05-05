@@ -1,0 +1,55 @@
+@media screen and (max-width: 760px) {
+    .container {
+        max-width: calc(100% - 1rem);
+    }
+    .section {
+        padding: 10rem 1rem;
+    }
+    h1 {
+        font-size: 4.4rem;
+        line-height: initial;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+        letter-spacing: 3.2px;
+    }
+
+    p {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+   
+    .iphone {
+        display: none;
+    }
+
+    .profil__text {
+        text-align: center;
+        max-width: initial;
+    }
+
+    .wrapper-btn {
+        justify-content: center;
+    }
+
+    .services__title::after, .project__title::after, .contact__title::after {
+        font-size: 4rem;
+        top: -31px;
+        left: -31px;
+
+    }
+
+    .services__container {
+        flex-direction: column;
+    }
+
+    .services__listing-container {
+        width: 100%;
+    }
+
+    .footer {
+        background: none;
+        background-color: #e2e4f8;
+}
+}

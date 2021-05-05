@@ -12,7 +12,7 @@ html {
   body {
       font-size: 1.4rem;
       font-family: 'Inter', sans-serif;
-      color: #000000;
+      color: #424242;
       letter-spacing: .3px;
     }
     h1, h2, h3 {
@@ -23,17 +23,22 @@ html {
         font-size: 9rem;
         line-height: 9rem;
         letter-spacing: 5px;
+        color: #212121;
     }
 
     h2 {
         position: relative;
         font-size: 6rem;
         letter-spacing: 5px;
+        color: #424242;
+
 
     }
 
     h3 {
         font-size: 2rem;
+        color: #424242;
+
     }
     
     a {
@@ -180,6 +185,11 @@ html {
         padding: 14px 16px;
         text-decoration: none;
         letter-spacing: .8px;
+        transition: .3s;
+
+        &:hover {
+            color: #d70dc9;
+        }
 
     }
     &__email {
@@ -199,45 +209,9 @@ html {
      overflow: hidden;
    }
   
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    color: #212121;
-  }
   
-  .dropdown-content {
-    visibility: none;
-    opacity: 0;
-    pointer-events: none;
-    position: absolute;
-    width: 23rem;
-    top: 73px;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 10px 70px rgba(39, 39, 39, 0.1);
-    z-index: 1;
-    transition: .3s;
-    border-radius: 5px;
-  }
   
-  .dropdown-content a {
-    float: none;
-    // color: black;
-    padding: 1.5rem;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-
-  }
   
-//   .dropdown-content a:hover {
-//     // background-color: #ddd;
-//   }
-  
-  .dropdown:hover .dropdown-content {
-    visibility: visible;
-    opacity: 1;  
-    pointer-events: visible;
-
-}
 /// PROFIL
 
 
@@ -266,6 +240,7 @@ html {
         padding-top: 3rem;
         line-height: 3rem;
         max-width: 50rem;
+        color: black;
     }
 
     &__hands {
@@ -277,10 +252,9 @@ html {
 }
 .iphone {
     position: absolute;
-    right: -38rem;
-    top: 6rem;
-    max-width: 140rem;
-    transform: rotate(10deg);
+    right: -60rem;
+    top: 7rem;
+    max-width: 174rem;
 }
 
 // SERVICES
@@ -387,6 +361,10 @@ html {
     }
     &__text {
         max-width: 60rem;
+    }
+
+    &__container {
+        gap: 3rem;
     }
 
     
@@ -559,6 +537,6 @@ html {
     right: -5%;
 }
  
-@import './mediaqueries-tablet.scss'
- //////////
+@import './mediaqueries-tablet.scss';
+@import './mediaqueries-mobile.scss';
  
